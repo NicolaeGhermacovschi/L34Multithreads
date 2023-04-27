@@ -4,7 +4,7 @@ import entity.Animal;
 import java.util.ArrayList;
 import java.util.TimerTask;
 
-public class FeedAnimal extends TimerTask{
+public class FeedAnimal implements  Runnable{
     ArrayList<Animal> animalArrayList;
 
     public FeedAnimal(ArrayList<Animal> animalArrayList) {
